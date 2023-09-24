@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+body{
+background:white;        
+}
+.container{
+height:250px;
+width:250px;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:15px;
+background:white;   
+font-family: 'Poppins', sans-serif;
+border-radius:100%;
+border:10px solid black;
+}
+ 
+.centernut{
+height:15px;
+width:15px;
+border-radius:100%;
+background:black;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+} 
+
+.indicator div{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+height:5px;  
+width:2px;
+background:#404040;
+}
+
+.indicator div:nth-child(1){
+transform:rotate(30deg)  translateY(-113px)     
+}
+
+.indicator div:nth-child(2) {
+transform: rotate(60deg) translateY(-113px)
+}
+
+.indicator div:nth-child(3) {
+transform: rotate(90deg) rotateZ(-90deg) translateY(-10px) translateX(100px);
+background:white;
+}
+
+.indicator div:nth-child(4) {
+transform: rotate(120deg) translateY(-113px)
+}
+
+.indicator div:nth-child(5) {
+transform: rotate(150deg) translateY(-113px)
+}
+
+.indicator div:nth-child(6) {
+transform: rotate(180deg) rotateZ(180deg) translateY(100px) translateX(-5px); 
+background:white;
+}
+
+.indicator div:nth-child(7) {
+transform: rotate(210deg) translateY(-113px)
+}
+
+.indicator div:nth-child(8) {
+transform: rotate(240deg) translateY(-113px)
+}
+
+.indicator div:nth-child(9) {
+transform: rotate(270deg) rotateZ(90deg) translateX(-110px) translateY(-10px);
+background:white;
+}
+
+.indicator div:nth-child(10) {
+transform: rotate(300deg) translateY(-113px)
+}
+
+.indicator div:nth-child(11) {
+transform: rotate(330deg) translateY(-113px)
+}
+
+.indicator div:nth-child(12) {
+transform: rotate(360deg) translateY(-113px);
+background:white;
+}
+
+.sec_hand{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);   
+z-index:5;
+border-radius:50%;
+}
+
+.sec_hand::before{
+content:"";
+position:absolute; 
+top:-110px;
+height:110px; 
+width:3px;
+background:black;
+z-index:10;
+left:-1px;
+border-radius:6px 6px 0px 0px;
+}
+
+.min_hand{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);   
+height:1px;
+width:1px;
+z-index:4;
+transform:rotate(240deg);
+}
+
+.min_hand::before{
+content:"";
+position:absolute;  
+top:-95px;
+height:90px; 
+width:3px;
+background:black;
+border-radius:6px 6px 0px 0px;
+}
+
+.hour_hand{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+height:1px;
+width:1px;
+z-index:3;
+border-radius:50%;
+transform:rotate(120deg);
+}
+
+.hour_hand::before{
+content:"";
+position:absolute;
+width:8px;
+top:-60px;
+height:60px;
+background:black;
+border-radius:6px 6px 0px 0px;
+left:-3px;
+  }
